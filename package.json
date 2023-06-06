@@ -1,0 +1,23 @@
+{
+  "name": "drizzle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "rimraf ./.build && tsc",
+    "start": "yarn build && node .build/index.js"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.26.5",
+    "postgres": "^3.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "drizzle-kit": "^0.18.1",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.3"
+  }
+}
